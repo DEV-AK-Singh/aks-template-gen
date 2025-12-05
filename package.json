@@ -1,6 +1,6 @@
 {
   "name": "aks-template-gen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A template generator for common projects",
   "main": "index.js",
   "type": "commonjs",
