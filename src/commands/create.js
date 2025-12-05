@@ -71,6 +71,15 @@ async function create(projectName, opts) {
     fs.mkdirSync(projectPath);
 
     copyFiles(templatePath, projectPath);
+
+    fs.writeFileSync(path.join(projectPath, "config.json"), JSON.stringify(projectConfig, null, 2));
+
+    if(projectConfig.installDeps) {
+      console.log("\nInstalling dependencies...");
+      const { execSync } = require("child_process");
+      execSync("npm install", { cwd: projectPath });
+    }
+
     console.log("\n✅ Project created successfully in", projectPath);
 
   } catch (err) {
