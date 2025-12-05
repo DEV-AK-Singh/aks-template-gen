@@ -1,0 +1,29 @@
+{
+  "name": "aks-template-gen",
+  "version": "1.0.0",
+  "description": "A template generator for common projects",
+  "main": "index.js",
+  "type": "commonjs",
+  "bin": {
+    "aks-template-gen": "bin/index.js"
+  },
+  "keywords": [
+    "template",
+    "generator",
+    "cli",
+    "project"
+  ],
+  "author": "Abhishek Singh",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DEV-AK-Singh/aks-template-gen.git"
+  },
+  "dependencies": {
+    "commander": "^14.0.2",
+    "inquirer": "^12.11.1"
+  }
+}
